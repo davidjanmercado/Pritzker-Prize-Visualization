@@ -4,7 +4,6 @@
  *  www.davidjanmercado.com
  ***************************************************/
 
-//color[]  dessert = {#9F9694, #791F33, #BA3D49, #F1E6D4, #E2E1DC};
 // {bg, graph, highlight, text, sub1, sub2}
 color[] archi = {#131512, #F2771F, #F7F3F0, #EAEAEA, #D3D3D3, #FF8C3A};
 color[] palette = archi;
@@ -56,11 +55,11 @@ PImage defaultimg;
 String url;
 int imgScaleFactor = 3;
 
-// country stacked bar
+// Country stacked bar
 int barheight = 5;
 
 void setup() {
-  size(width, height);
+  size(1000, 450);
   pdata = new Table("pritzker.txt");
   rowCount = pdata.getRowCount();
 
@@ -111,7 +110,7 @@ void drawData() {
   strokeWeight(0.5);
   stroke(palette[3], 100.0);
   text("The Pritzker Architecture Prize", textX, textY);
-  //line(textX, textY+10, (int)(defaultimg.width/imgScaleFactor), textY+10);
+  line(textX, textY+10, (int)(defaultimg.width/imgScaleFactor), textY+10);
   
   textFont(labelFont);
   
